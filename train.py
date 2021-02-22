@@ -22,9 +22,8 @@ ap = argparse.ArgumentParser()
 ap.add_argument("-e", "--epoch",default=2, type=int, help="number of epochs")
 ap.add_argument("-b", "--batch-size", default=64, type=int, help="batch size")
 ap.add_argument("-m", "--model", default="CNN", type=str, help="Model Name")
-ap.add_argument("-l", "--loss", default="CrossEntropy", type=str, help="Loss function")
-ap.add_argument( "--test", default=False, type=bool, help="Test mode")
-ap.add_argument("-r", "--resume", default=None, type=str, help="checkpoint")
+ap.add_argument( "--test", default=True, type=bool, help="Test mode")
+ap.add_argument("-r", "--resume", default="CNN_0.11553671139955521.pt", type=str, help="checkpoint")
 args = vars(ap.parse_args())
 ROOT = None
 if args['model'] == "CNN":
@@ -60,11 +59,8 @@ test_loader = DataLoader(test_dataset,
                           num_workers=0)
 
 
-if args['loss'] == "CrossEntropy":
-    criterion = nn.CrossEntropyLoss().cuda()
-else:
-    print('NLL')
-    criterion = nn.NLLLoss().cuda()
+criterion = nn.CrossEntropyLoss().cuda()
+
 net.to(device)
 
 optimizer =torch.optim.Adam(net.parameters(), lr=1e-4) #define optimizer
@@ -82,7 +78,7 @@ else:
         if loss < min_loss:
             print("=====Saving=======")
             model_dir = './saved_models/'
-            name =  args["dataset"]+'_'+model_name+'_'+str(loss)+'.pt'
+            name =  model_name+'_'+str(loss)+'.pt'
             min_loss = loss
             # after training, save your model parameters in the dir 'saved_models'
             torch.save(net.state_dict(), model_dir+name)
