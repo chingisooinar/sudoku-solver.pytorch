@@ -1,3 +1,5 @@
+runfile('/home/nuvilabs/Desktop/sudoku_solver/train.py', wdir='/home/nuvilabs/Desktop/sudoku_solver')
+Reloaded modules: model, data_preprocess, utils, accuracy, trainer, validater
 SudokuCNN(
   (conv_layers): Sequential(
     (0): Conv2dSame(
@@ -123,14 +125,234 @@ SudokuCNN(
   )
   (last_conv): Conv2d(512, 9, kernel_size=(1, 1), stride=(1, 1))
 )
-  1%|          | 6965/1000000 [00:00<00:14, 69647.58it/s]Loading Sudokus
-100%|██████████| 1000000/1000000 [00:14<00:00, 70382.72it/s]
+  1%|          | 7114/1000000 [00:00<00:13, 71136.00it/s]Loading Sudokus
+100%|██████████| 1000000/1000000 [00:13<00:00, 72417.22it/s]
   0%|          | 0/1000000 [00:00<?, ?it/s]Loading Solutions
-100%|██████████| 1000000/1000000 [00:13<00:00, 71958.37it/s]
+100%|██████████| 1000000/1000000 [00:13<00:00, 73394.69it/s]
+=====Training=======
 cuda:0
- Accuracy:940/1024
- Accuracy:1001/1088
- Accuracy:1059/1152
- Accuracy:1117/1216
- Accuracy:1175/1280
+Epoch: 1, Batch: 1, Avg. Loss: 0.009881311655044555
+Epoch: 1, Batch: 201, Avg. Loss: 1.8462487958371638
+Epoch: 1, Batch: 401, Avg. Loss: 1.8263232007622718
+Epoch: 1, Batch: 601, Avg. Loss: 1.8406961403787137
+Epoch: 1, Batch: 801, Avg. Loss: 1.8425280436873437
+Epoch: 1, Batch: 1001, Avg. Loss: 1.8399417504668236
+Epoch: 1, Batch: 1201, Avg. Loss: 1.854983998835087
+Epoch: 1, Batch: 1401, Avg. Loss: 1.862141103297472
+Epoch: 1, Batch: 1601, Avg. Loss: 1.8505361385643482
+Epoch: 1, Batch: 1801, Avg. Loss: 1.85480188280344
+Epoch: 1, Batch: 2001, Avg. Loss: 1.865306257456541
+Epoch: 1, Batch: 2201, Avg. Loss: 1.866300391405821
+Epoch: 1, Batch: 2401, Avg. Loss: 1.8581783011555673
+Epoch: 1, Batch: 2601, Avg. Loss: 1.8557866580784321
+Epoch: 1, Batch: 2801, Avg. Loss: 1.869547963887453
+Epoch: 1, Batch: 3001, Avg. Loss: 1.8695107460021974
+Epoch: 1, Batch: 3201, Avg. Loss: 1.8689726255834103
+Epoch: 1, Batch: 3401, Avg. Loss: 1.8612373150885104
+Epoch: 1, Batch: 3601, Avg. Loss: 1.8554712496697903
+Epoch: 1, Batch: 3801, Avg. Loss: 1.8721299327909946
+Epoch: 1, Batch: 4001, Avg. Loss: 1.872619879990816
+Epoch: 1, Batch: 4201, Avg. Loss: 1.8648416258394718
+Epoch: 1, Batch: 4401, Avg. Loss: 1.8618392832577229
+Epoch: 1, Batch: 4601, Avg. Loss: 1.8663919545710086
+Epoch: 1, Batch: 4801, Avg. Loss: 1.874842743575573
+Epoch: 1, Batch: 5001, Avg. Loss: 1.8711438186466693
+Epoch: 1, Batch: 5201, Avg. Loss: 1.8691574171185494
+Epoch: 1, Batch: 5401, Avg. Loss: 1.8697379499673843
+Epoch: 1, Batch: 5601, Avg. Loss: 1.8833161726593972
+Epoch: 1, Batch: 5801, Avg. Loss: 1.878929363936186
+Epoch: 1, Batch: 6001, Avg. Loss: 1.9028405249118805
+Epoch: 1, Batch: 6201, Avg. Loss: 1.8792700424790383
+Epoch: 1, Batch: 6401, Avg. Loss: 1.8768431082367898
+Epoch: 1, Batch: 6601, Avg. Loss: 1.8720729403197764
+Epoch: 1, Batch: 6801, Avg. Loss: 1.8710239872336387
+Epoch: 1, Batch: 7001, Avg. Loss: 1.8819370903074741
+Epoch: 1, Batch: 7201, Avg. Loss: 1.8756005994975566
+Epoch: 1, Batch: 7401, Avg. Loss: 1.8765729166567326
+Epoch: 1, Batch: 7601, Avg. Loss: 1.880251632630825
+Epoch: 1, Batch: 7801, Avg. Loss: 1.877211868017912
+Epoch: 1, Batch: 8001, Avg. Loss: 1.8826891794800757
+Epoch: 1, Batch: 8201, Avg. Loss: 1.8703693807125092
+Epoch: 1, Batch: 8401, Avg. Loss: 1.862896876782179
+Epoch: 1, Batch: 8601, Avg. Loss: 1.8754999309778213
+Epoch: 1, Batch: 8801, Avg. Loss: 1.8565528333187102
+Epoch: 1, Batch: 9001, Avg. Loss: 1.876633982360363
+Epoch: 1, Batch: 9201, Avg. Loss: 1.869132997840643
+Epoch: 1, Batch: 9401, Avg. Loss: 1.873833540827036
+Epoch: 1, Batch: 9601, Avg. Loss: 1.8712511852383613
+Epoch: 1, Batch: 9801, Avg. Loss: 1.8745112761855125
+Epoch: 1, Batch: 10001, Avg. Loss: 1.8818869322538376
+Epoch: 1, Batch: 10201, Avg. Loss: 1.8747308738529682
+Epoch: 1, Batch: 10401, Avg. Loss: 1.876907181739807
+Epoch: 1, Batch: 10601, Avg. Loss: 1.864235455542803
+Epoch: 1, Batch: 10801, Avg. Loss: 1.8880059346556664
+Epoch: 1, Batch: 11001, Avg. Loss: 1.8689026735723018
+Epoch: 1, Batch: 11201, Avg. Loss: 1.8879803083837032
+Epoch: 1, Batch: 11401, Avg. Loss: 1.8719624541699886
+Epoch: 1, Batch: 11601, Avg. Loss: 1.8655586823821069
+Epoch: 1, Batch: 11801, Avg. Loss: 1.8726676881313324
+Epoch: 1, Batch: 12001, Avg. Loss: 1.87997308075428
+Epoch: 1, Batch: 12201, Avg. Loss: 1.8713629446923732
+Epoch: 1, Batch: 12401, Avg. Loss: 1.8891033433377742
+=====Validation=======
+cuda:0
+Test Loss at 0: 0.12020131945610046 Accuracy:5/64
+Test Loss at 1000: 0.11556016493748714 Accuracy:4168/64064
+Test Loss at 2000: 0.11552686697018259 Accuracy:8167/128064
+Test Loss at 3000: 0.1155818942679798 Accuracy:12276/192064
+Test Loss at 3124: 0.11553671139955521 Accuracy:0.063875
+=====Saving=======
+
+runfile('/home/nuvilabs/Desktop/sudoku_solver/train.py', wdir='/home/nuvilabs/Desktop/sudoku_solver')
+Reloaded modules: trainer, validater, model, data_preprocess, utils, accuracy
+SudokuCNN(
+  (conv_layers): Sequential(
+    (0): Conv2dSame(
+      (net): Sequential(
+        (0): ReflectionPad2d((1, 1, 1, 1))
+        (1): Conv2d(1, 512, kernel_size=(3, 3), stride=(1, 1))
+        (2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (3): ReLU(inplace=True)
+      )
+    )
+    (1): Conv2dSame(
+      (net): Sequential(
+        (0): ReflectionPad2d((1, 1, 1, 1))
+        (1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1))
+        (2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (3): ReLU(inplace=True)
+      )
+    )
+    (2): Conv2dSame(
+      (net): Sequential(
+        (0): ReflectionPad2d((1, 1, 1, 1))
+        (1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1))
+        (2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (3): ReLU(inplace=True)
+      )
+    )
+    (3): Conv2dSame(
+      (net): Sequential(
+        (0): ReflectionPad2d((1, 1, 1, 1))
+        (1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1))
+        (2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (3): ReLU(inplace=True)
+      )
+    )
+    (4): Conv2dSame(
+      (net): Sequential(
+        (0): ReflectionPad2d((1, 1, 1, 1))
+        (1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1))
+        (2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (3): ReLU(inplace=True)
+      )
+    )
+    (5): Conv2dSame(
+      (net): Sequential(
+        (0): ReflectionPad2d((1, 1, 1, 1))
+        (1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1))
+        (2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (3): ReLU(inplace=True)
+      )
+    )
+    (6): Conv2dSame(
+      (net): Sequential(
+        (0): ReflectionPad2d((1, 1, 1, 1))
+        (1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1))
+        (2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (3): ReLU(inplace=True)
+      )
+    )
+    (7): Conv2dSame(
+      (net): Sequential(
+        (0): ReflectionPad2d((1, 1, 1, 1))
+        (1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1))
+        (2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (3): ReLU(inplace=True)
+      )
+    )
+    (8): Conv2dSame(
+      (net): Sequential(
+        (0): ReflectionPad2d((1, 1, 1, 1))
+        (1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1))
+        (2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (3): ReLU(inplace=True)
+      )
+    )
+    (9): Conv2dSame(
+      (net): Sequential(
+        (0): ReflectionPad2d((1, 1, 1, 1))
+        (1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1))
+        (2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (3): ReLU(inplace=True)
+      )
+    )
+    (10): Conv2dSame(
+      (net): Sequential(
+        (0): ReflectionPad2d((1, 1, 1, 1))
+        (1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1))
+        (2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (3): ReLU(inplace=True)
+      )
+    )
+    (11): Conv2dSame(
+      (net): Sequential(
+        (0): ReflectionPad2d((1, 1, 1, 1))
+        (1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1))
+        (2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (3): ReLU(inplace=True)
+      )
+    )
+    (12): Conv2dSame(
+      (net): Sequential(
+        (0): ReflectionPad2d((1, 1, 1, 1))
+        (1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1))
+        (2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (3): ReLU(inplace=True)
+      )
+    )
+    (13): Conv2dSame(
+      (net): Sequential(
+        (0): ReflectionPad2d((1, 1, 1, 1))
+        (1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1))
+        (2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (3): ReLU(inplace=True)
+      )
+    )
+    (14): Conv2dSame(
+      (net): Sequential(
+        (0): ReflectionPad2d((1, 1, 1, 1))
+        (1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1))
+        (2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (3): ReLU(inplace=True)
+      )
+    )
+  )
+  (last_conv): Conv2d(512, 9, kernel_size=(1, 1), stride=(1, 1))
+)
+  0%|          | 0/1000000 [00:00<?, ?it/s]Loading Sudokus
+100%|██████████| 1000000/1000000 [00:13<00:00, 71722.13it/s]
+  0%|          | 0/1000000 [00:00<?, ?it/s]Loading Solutions
+100%|██████████| 1000000/1000000 [00:14<00:00, 68935.91it/s]
+cuda:0
+ Accuracy:952/1024
+ Accuracy:1012/1088
+ Accuracy:1070/1152
+ Accuracy:1128/1216
+ Accuracy:1187/1280
+ Accuracy:1246/1344
+ Accuracy:1309/1408
+ Accuracy:1369/1472
+ Accuracy:1428/1536
+ Accuracy:1489/1600
+ Accuracy:1548/1664
+ Accuracy:1608/1728
+ Accuracy:1670/1792
+ Accuracy:1728/1856
+ Accuracy:1787/1920
+ Accuracy:1848/1984
+ Accuracy:1909/2048
+ Accuracy:1969/2112
+ Accuracy:2026/2176
+ Accuracy:2081/2240
 ...
