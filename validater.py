@@ -26,11 +26,7 @@ def val_net(epoch, n_epochs, net, criterion, optimizer, device, test_loader):
             # forward pass to get outputs
             output = net(sudoku)
     
-            # calculate the loss between predicted and target 
-            if isinstance(criterion,nn.NLLLoss):
-                softmax = nn.LogSoftmax(dim=1)
-                output = softmax(output)
-            
+            # calculate the loss between predicted and target            
             loss = criterion(output , target)
     
             val_loss+=loss.data.item()
