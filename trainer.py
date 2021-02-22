@@ -34,9 +34,6 @@ def train_net(epoch, n_epochs, net, criterion, optimizer, device, train_loader):
         output = net(sudoku)
 
         # calculate the loss between predicted and target 
-        if isinstance(criterion,nn.NLLLoss):
-            softmax = nn.LogSoftmax(dim=1)
-            output = softmax(output)
         loss = criterion(output , target)
         
         # backward pass to calculate the weight gradients
