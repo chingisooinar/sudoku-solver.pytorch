@@ -42,10 +42,8 @@ class SudokuCNN(nn.Module):
                                          Conv2dSame(512,512,3),#14
                                          Conv2dSame(512,512,3))#15
         self.last_conv = nn.Conv2d(512, 9, 1)
-        #self.fc = nn.Linear(9 * 9 * 9, 81)
     def forward(self, x):
         x = self.conv_layers(x)
         x = self.last_conv(x)
-        #x = x.reshape(-1, 9 * 9 * 9)
-        return x#self.fc(x)
+        return x
         
