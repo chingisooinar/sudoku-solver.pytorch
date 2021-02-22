@@ -16,6 +16,7 @@ def norm(a):
 def denorm(a):
     
     return (a+.5)*9
+
 def inference_sudoku(sample,model):
     
     '''
@@ -45,8 +46,8 @@ def inference_sudoku(sample,model):
         val = pred[x][y]
         feat[x][y] = val
         feat = norm(feat)
-    #print('out')
     return pred 
+
 def test_accuracy(epoch, n_epochs, net, device, test_loader):
     net.eval()      
     print(device)
